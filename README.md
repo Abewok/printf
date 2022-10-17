@@ -28,5 +28,5 @@ _printf is a custom implementation of C printf program function . It produces an
 
 ## Authors
 
-Abebe Worku [![Github URL](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abewok/) </br>
+Abebe Dadi [![Github URL](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abewok/) </br>
 Tewodros Woldetsadik [![Github URL](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TeddyT21/)
