@@ -1,26 +1,27 @@
 #include "main.h"
 /**
-* get_func - search and return the correct function
-* @s: array to check
-* Return: return a function
-**/
-int (*get_func(char s))(va_list)
+ * get_func - check for valid specifier
+ * @format: a character to check
+ * Return: a pointer to the function
+ */
+int (*get_func(const char *format))(va_list)
 {
-	op_t ops[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"d", print_d},
-		{"i", print_i},
-		{"b", print_b},
+	int i;
+	func_t p[] = {
+		{"c", print_char},
+		{"s", print_str},
+		{"%", print_pct},
+		{"d", print_dec},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
-	int i;
-
-	for (i = 0; ops[i].c != NULL; i++)
+	for (i = 0; p[i].t; i++)
 	{
-		if (*ops[i].c == s)
-			return (ops[i].f);
+		if (*format == *(p[i].t))
+		{
+			return (p[i].f);
+		}
 	}
 	return (NULL);
 }
