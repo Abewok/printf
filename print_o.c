@@ -38,7 +38,7 @@ void *conv_o(char *tab)
 	char *tabo, temp;
 	int i, mul = 1, octDigit = 0, j = 0;
 
-	tabo = malloc(sizeof(char *));
+	tabo = malloc(sizeof(char *) + 1 );
 	for (i = 0; tab[i] != 'S'; i++)
 	;
 	i--;
