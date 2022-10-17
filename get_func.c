@@ -12,7 +12,7 @@ int (*get_func(const char *format))(va_list)
 		{"s", print_str},
 		{"%", print_pct},
 		{"d", print_dec},
-		{"i", print_int},
+		{"i", print_dec},
 		{NULL, NULL}
 	};
 
