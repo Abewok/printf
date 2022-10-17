@@ -16,7 +16,8 @@ int (*printer(char formati))(va_list)
 	{'d', print_i},
 	{'R', print_rot13},
 	{'b', print_b},
-	{'r', print_r},	
+	{'r', print_r},
+	{'S', print_S},
 	{'p', print_p},
 	{'u', print_u},
 	{'x', print_x},
@@ -79,6 +80,4 @@ int _printf(const char *format, ...)
 		{	_putchar(format[i]);
 			p_counter++;	}	}
 	va_end(arg);
-	
-	return (p_counter);	
-	}
+	return (p_counter);	}
