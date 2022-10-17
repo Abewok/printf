@@ -1,30 +1,28 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+#ifndef PRINTF_H
+#define PRINTF_H
 #include <stdarg.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <string.h>
-
 /**
- * struct func_type - type structure
- * @t: pointer to the argument
- * @f: pointer-function associated with the argument
- */
-typedef struct func_type
+ * struct form - Types.
+ * @c: Types in c.
+ * @f: Corresponding function.
+ **/
+typedef struct form
 {
-	char *t;
-	int (*f)(va_list);
-} func_t;
-
-int (*get_func(const char *format))(va_list);
-int _putchar(char c);
+char c;
+int (*f)(va_list);
+} type_printer;
 int _printf(const char *format, ...);
-int print_str(va_list args);
-int print_char(va_list args);
-int print_pct(va_list args);
-int print_dec(va_list args);
-
+int print_s(va_list arg);
+int print_c(va_list arg);
+int print_i(va_list arg);
+int _putchar(char c);
+int print_rot13(va_list arg);
+int print_b(va_list arg);
+int print_r(va_list arg);
+int print_S(va_list arg);
+int print_p(va_list arg);
+int print_u(va_list arg);
+int print_x(va_list arg);
+int print_X(va_list arg);
+int print_o(va_list arg);
 #endif
