@@ -33,6 +33,7 @@ char is_non_custom_specifier(char c)
 	case 'n':
 	case 'o':
 	case 'p':
+	case 'r':
 	case 's':
 	case 'u':
 	case 'X':
