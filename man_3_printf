@@ -3,7 +3,7 @@
 ." Render on terminal with
 ." man ./man_3_printf
 ."
-.TH man 3 "20 April 2022" "v 1.0" "_printf man page"
+.TH man 3 " 16 October 2022" "v 1.0" "_printf man page"
 
 .SH Name
 .B _printf
@@ -167,4 +167,4 @@ _printf("Wind: %d%s and Precipitation: %d%%\\n", 28, "km/h", 0x1a);
 
 .SH
 Authors
-Filmawit Mekonen and Senait Mekonen
+Abebe Dadi and Tewodros Woldetsadik.
