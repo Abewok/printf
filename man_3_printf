@@ -167,4 +167,4 @@ _printf("Wind: %d%s and Precipitation: %d%%\\n", 28, "km/h", 0x1a);
 
 .SH
 Authors
-Abebe Dadi and Tewodros Woldetsadik.
+(Abebe Dadi and Tewodros Woldetsadik).
